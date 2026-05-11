@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAKEY❤️</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    min-height:100vh;
+    background:linear-gradient(135deg,#ff9ec4,#ffd6e7,#fff0f6);
+    font-family:'Poppins',sans-serif;
+    overflow-x:hidden;
+    padding:30px 15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:100%;
+    max-width:650px;
+    background:rgba(255,255,255,0.25);
+    backdrop-filter:blur(10px);
+    border-radius:25px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    animation:fadeIn 1.5s ease;
+}
+
+h1{
+    color:#ff2e74;
+    font-size:2.1rem;
+    margin-bottom:20px;
+}
+
+.message-box{
+    margin-top:20px;
+}
+
+.message{
+    display:none;
+    color:#5a2140;
+    font-size:1.1rem;
+    line-height:1.9;
+    animation:fadeIn 0.8s ease;
+    margin-bottom:20px;
+}
+
+.button{
+    border:none;
+    margin-top:20px;
+    padding:14px 28px;
+    border-radius:40px;
+    background:#ff2e74;
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow:0 5px 15px rgba(255,46,116,0.4);
+}
+
+.button:hover{
+    transform:scale(1.08);
+    background:#ff0f63;
+}
+
+.love{
+    margin-top:25px;
+    color:#ff005d;
+    font-size:1.4rem;
+    font-weight:bold;
+    line-height:2;
+}
+
+.hearts{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    overflow:hidden;
+    z-index:-1;
+}
+
+.heart{
+    position:absolute;
+    font-size:24px;
+    color:rgba(255,255,255,0.7);
+    animation:float 8s linear infinite;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(100vh) scale(0.5);
+        opacity:0;
+    }
+
+    20%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-10vh) scale(1.2);
+        opacity:0;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:600px){
+
+    .container{
+        padding:25px;
+    }
+
+    h1{
+        font-size:1.7rem;
+    }
+
+    .message{
+        font-size:1rem;
+    }
+
+    .love{
+        font-size:1.2rem;
+    }
+
+    .button{
+        width:100%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hearts">
+    <div class="heart" style="left:10%; animation-delay:0s;">❤️</div>
+    <div class="heart" style="left:25%; animation-delay:2s;">💖</div>
+    <div class="heart" style="left:40%; animation-delay:4s;">💕</div>
+    <div class="heart" style="left:60%; animation-delay:1s;">❤️</div>
+    <div class="heart" style="left:75%; animation-delay:3s;">💗</div>
+    <div class="heart" style="left:90%; animation-delay:5s;">💞</div>
+</div>
+
+<div class="container">
+
+    <h1>WAKEYYY MY BABYYYYY❤️</h1>
+
+    <div class="message-box">
+
+        <div class="message">
+            My lovelyyyyyyy babyyyyyyyyy...  
+            I hope you rested like the sweetest angel everrr😊
+        </div>
+
+        <div class="message">
+            I hope every little bit of tiredness.. stress.. and heaviness melted away while you slepttt💖
+        </div>
+
+        <div class="message">
+            You deserve the softest dreams.. the warmest hugs.. and kisses every seconddd🥹💕
+        </div>
+
+        <div class="message">
+            Babyyyy I wish I could pull you into my arms right now and never let goooo❤️
+        </div>
+
+        <div class="message">
+            And if today feels hard..i m here babyyy
+            Your baby is standing beside you foreverrr💞
+        </div>
+
+        <div class="message">
+            Drink waterrrr... eat properlyyy... and stop overthinkinggg cutieeee😊🌹
+        </div>
+
+        <div class="message">
+            You are literally my comfort personnn... my favorite notification... my safest placeeee❤️
+        </div>
+
+        <div class="message">
+            Sometimes I just stare at your texts smiling like a cuteyy because omggggg how are youuuuu soooooo adorableeee😭💕
+        </div>
+
+        <div class="message">
+            I wanna kiss your forehead... squish your cheeks... and hold you foreverrrrr💋
+        </div>
+
+        <div class="message">
+            <div class="love">
+                I loveeeeeeeeeeeeeeeee youuuuuuu babyyyyyy❤️  
+                umaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa💋💋💋
+            </div>
+        </div>
+
+    </div>
+
+    <button class="button" onclick="showNextMessage()">
+        moreee babyyy 💌
+    </button>
+
+</div>
+
+<script>
+
+const messages = document.querySelectorAll('.message');
+const button = document.querySelector('.button');
+
+const buttonTexts = [
+    "moreee babyyy💌",
+    "moreeeeee😚",
+    "moree babyy moree💕",
+    "gimme moreee🤭",
+    "againnn babyyy❤️",
+    "more cuddlessss💖",
+    "keep goingggg😭💕",
+    "need more loveyyy💞",
+    "babyyyy moreee💋",
+    "last oneeee😚"
+];
+
+let current = 0;
+
+function showNextMessage(){
+
+    if(current < messages.length){
+
+        messages[current].style.display = "block";
+
+        if(current < buttonTexts.length - 1){
+            button.innerText = buttonTexts[current + 1];
+        }
+
+        current++;
+    }
+
+    if(current === messages.length){
+        button.innerText = "all my love is yours foreverrr ❤️";
+        button.disabled = true;
+        button.style.opacity = "0.8";
+    }
+}
+
+</script>
+
+</body>
+</html>
